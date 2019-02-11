@@ -6,7 +6,7 @@ username = input("Enter your username:")
 password = getpass.getpass("Enter your password:")
 driver = get_network_driver("junos")
 
-# Open a file called swichlist which has a list of devices to modify
+# Open a file called "switchlist" which has a list of devices to modify
 with open('switchlist') as infile:
 	for host in infile:
 		try:
